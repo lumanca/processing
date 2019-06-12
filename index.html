@@ -38,7 +38,7 @@ void draw(){
     translate(190, 190);
     fill(#0055ff);                       //orbita
     ellipse (0,0 ,200,200);
-       fill(#ffff00);                   //colore sole
+       fill(255,255,0);                   //colore sole
        ellipse (0,00,30,30);            //sole
   if (frameCount % 10 == 0) {
     fill(frameCount * 3 % 255, frameCount * 3 % 255,
@@ -50,19 +50,19 @@ void draw(){
     //popMatrix();
   }
      rotate(radians(frameCount * 1  % 360));    //movimento pianeta
-     fill(#000000);                        //colore pianeta
+     fill(0,0,0);                        //colore pianeta
      ellipse (50+altezza,50,10,10);       //pianeta
      
      rotate(radians(frameCount * 1  % 360));    //movimento pianeta
-     fill(#00ff00);                        //colore pianeta
+     fill(0,255,0);                        //colore pianeta
      ellipse (50,50,10,10);       //pianeta terra
 
      rotate(radians(frameCount * 1  % 360));    //movimento pianeta
-     fill(#ff0000);                        //colore pianeta
+     fill(255,0,0);                        //colore pianeta
      ellipse (50,35,10,10);       //marte
      
      rotate(radians(frameCount * 1  % 360));    //movimento pianeta
-     fill(#000099);                        //colore pianeta
+     fill(0,0,160);                        //colore pianeta
      ellipse (50,00,10,10);       // venere
      
     popMatrix();
